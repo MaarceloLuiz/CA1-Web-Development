@@ -20,7 +20,7 @@
     --bg-color: #ffffff;
     --text-color: #fff;
     --second-text-color: #8966A8;
-    --second-color: #31b5e9;
+    --second-color: #5867be;
     --main-color: #fefdfd;
     --big-font: 4rem;
     --h2-font: 3rem;
@@ -111,6 +111,8 @@ section{
     color: var(--bg-color);
     letter-spacing: 3px;
     margin-bottom: 20px;
+
+    text-align: center;
 }
 
 .home-text p{
@@ -120,6 +122,8 @@ section{
     line-height: 38px;
     margin-bottom: 10px;
     left: 0%;
+
+    text-align: center;
 }
 
 /*clickable button style*/
@@ -130,6 +134,8 @@ section{
     color: var(--main-color);
     border-radius: 4px;
     transition: ease .40s;
+
+    text-align: center;
 }
 
 /* hover effect on the home hyperlink*/
@@ -140,36 +146,36 @@ section{
 }
 
 
-/* second section - about us */
-.second-section-text h1{
+/* second section - about us and Our Services*/
+.child h1{
     font-family: 'Paytone One', sans-serif;
     font-size: var(--big-font);
     line-height: 1.2;
-    color: var(--second-text-color);
+    color: var(--second-color);
     letter-spacing: 3px;
     margin-bottom: 20px;
+    float: left;
 
-    position: relative;
-    right: -55%;
+    margin-left: 30px;
 }
 
-/* home paragraph and hyperlink */
-.second-section-text a, p{
-    color: var(--second-text-color);
+.child p{
+    color: var(--second-color);
     font-size: 20px;
     font-weight: 400;
     line-height: 38px;
-    position: relative;
-    top: 0px;
-    right: -55%;
+    float: left;
+    padding: 5px;
+
+    text-align: justify;
 }
 
-/*second paragraph style - our services*/
-.our-services-text h1, p{
+.second-child{
+    margin-left: 30px;
+}
+
+.parent{
     display: flex;
-    position: relative;
-    top: 0px;
-    right: -55%;
 }
 
 /* footer style */
@@ -198,4 +204,15 @@ header.sticky{
 
 .sticky .navigation-bar{
     color: var(--text-color);
+}
+
+/* our services images style */
+.row-of-services{
+    color: var(--second-color);
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
 }
