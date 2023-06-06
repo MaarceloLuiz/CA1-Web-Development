@@ -1,0 +1,167 @@
+/* importing a font directly on the css */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+*{
+    box-sizing: border-box;
+    /*font-family: 'Indie Flower', cursive;
+    font-family: 'Paytone One', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+/* root element of the document: <html> in this case
+   it can be used to declare global variables */
+:root{
+    /*setting the variables at the same place in the style sheet*/
+    /*--bg-color: #8966A8;*/
+    --bg-color: #ffffff;
+    --text-color: #fff;
+    --second-text-color: #8966A8;
+    --second-color: #5867be;
+    --main-color: #fefdfd;
+    --big-font: 4rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+.destinations-title{
+    text-align: center;
+    color: var(--second-color);
+    font-size: 21px;
+}
+ /*table style*/
+.table-container{
+    color: black;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-container thead tr{
+    background-color: var(--second-color);
+    color: var(--text-color);
+    text-align: left;
+    font-weight: bold;
+}
+
+.table-container th, .table-container td{
+    padding: 12px 15px;
+}
+
+.table-container tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-container tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.table-container tbody tr:last-of-type{
+    border-bottom: 2px solid var(--second-color);
+}
+
+.table-container tbody tr.active-row{
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+/*destinations second section style*/
+.destinations-second-section .destinations-second-title{
+    color: var(--second-color);
+    font-size: 21px;
+    text-align: center;
+}
+
+/*packages style*/
+/* Base Layout: https://www.sliderrevolution.com/resources/css-tables/ */
+.pricing-box-container {
+    color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-box {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+    border-radius: 4px;
+    flex: 1;
+    padding: 15px 30px 30px;
+    margin: 2%;
+    min-width: 250px;
+    max-width: 350px;
+  }
+  
+  .pricing-box h5 {
+    text-transform: uppercase;
+  }
+  
+  .price {
+    margin: 24px 0;
+    font-size: 36px;
+    font-weight: 900;
+  }
+  
+  .price sub, .price sup {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  
+  .features-list {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .features-list li {
+    font-weight: 100;
+    padding: 12px 0;
+    font-weight: 100;
+  }
+  
+  .features-list li:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary {
+    border-radius: 25px;
+    border: none;
+    background-color: var(--second-text-color);
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+    transform: translateY(-3px);
+  }
+  
+  .pricing-box-bg-image {
+    background-image: url(img/cristo\ purple.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+  }
+  
+  .pricing-box-bg-image .features-list li {
+    border-bottom-color: rgba(255, 255, 255, 1);
+  }
+  
+  .pricing-box-bg-image .btn-primary {
+    background-color: #ffffff;
+    color: #000;
+  }

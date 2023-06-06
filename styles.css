@@ -96,13 +96,17 @@ section{
     position: relative;
     width: 100%;
     height: 100vh;
+
     background-image: url(img/backgroundImage.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
 }
+
 
 .home-text h1{
     font-family: 'Paytone One', sans-serif;
@@ -156,7 +160,8 @@ section{
     margin-bottom: 20px;
     float: left;
 
-    margin-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .child p{
@@ -168,6 +173,10 @@ section{
     padding: 5px;
 
     text-align: justify;
+
+    margin-left: auto;
+    margin-right: auto;
+   
 }
 
 .second-child{
@@ -215,4 +224,38 @@ header.sticky{
     align-items: center;
     text-align: center;
     margin-top: 5rem;
+}
+
+.services-box{
+    background-color: var(--bg-color);
+    border: 1px /*solid #f0eded*/;
+    padding: 20px 10px;
+    border-radius: 4px;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-img img{
+    height: 120px;
+    padding: 15px;
+    background: var(--bg-color);
+    box-shadow: 5px 10px 30px rgb(85, 85, 85 / 20%);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.services-box h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.services-box:hover{
+    box-shadow: 5px 30px 56.1276px rgb(218, 218, 218);
+    border: 1px solid transparent;
+    transform: translateY(-3px);
 }

@@ -8,6 +8,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="destinations-styles.css">
     
     <!-- box icons -->
     <link rel="stylesheet"
@@ -32,10 +33,10 @@
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <ul class="navigation-bar">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Destinations">Destinations</a></li>
-            <li><a href="#Bookings">Bookings</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#bookings">Bookings</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
     
@@ -66,32 +67,135 @@
         </div>
 
         <div class="row-of-services">
-            <div class="hotel-img">
-                <img src="img/services/5starHotelPurple.png" alt="5 star hotels">
+            <div class="services-box">
+                <div class="services-img">
+                    <img src="img/services/5starHotelPurple.png" alt="5 star hotels">
+                </div>
                 <h4>5 Star Hotels</h4>
             </div>
             
-            <div class="plane-ticket-img">
-                <img src="img/services/planeTicketPurple.png" alt="plate ticket">
-                <h4>Plane Tickets - One Way or Return Tickets</h4>
+            <div class="services-box">
+                <div class="services-img">
+                    <img src="img/services/planeTicketPurple.png" alt="plate ticket">
+                </div>
+                <h4>Plane Tickets</h4>
             </div>
             
-
-            <div class="services-img">
-                <img src="img/services/toursServicesPurple.png" alt="tours services">
-                <h4>Tour Services - Pub Craws, Hiking, Museums</h4>
+            <div class="services-box">
+                <div class="services-img">
+                    <img src="img/services/toursServicesPurple.png" alt="tours services">
+                </div>
+                <h4>Tours Services</h4>
             </div>
 
-            <div class="transfer-img">
-                <img src="img/services/transferServicesPurple.png" alt="transfer services">
+            <div class="services-box">
+                <div class="services-img">
+                    <img src="img/services/transferServicesPurple.png" alt="transfer services">
+                </div>
                 <h4>Transfer Services</h4>
             </div>
             
-            <div class="traveling-img">
-                <img src="img/services/travelingWorldPurple.png" alt="traveling">
-                <h4>Travel Anywhere around the World!</h4>
+            <div class="services-box">
+                <div class="services-img">
+                    <img src="img/services/travelingWorldPurple.png" alt="traveling">
+                </div>
+                <h4>Travel Anywhere!</h4>
             </div>
         </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="destinations-title">
+            <h2>Available Destinations Worldwide on Discount</h2>
+        </div>
+
+        <table class="table-container">
+            <thead>
+                <tr>
+                    <th>Destinations:</th>
+                  <th>London</th>
+                  <th>Dublin</th>
+                  <th>Rio de Janeiro</th>
+                  <th>New York</th>
+                  <th>Sidney</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Description:</td>
+                  <td>London is the capital city of England and the United Kingdom, located in the southeastern part of the country. With a rich history spanning over two thousand years, it is a global city known for its cultural diversity, iconic landmarks, and vibrant atmosphere.</td>
+                  <td>Dublin is the capital and largest city of Ireland, located on the eastern coast of the island. It is a vibrant and cosmopolitan city known for its rich history, literary heritage, friendly locals, and lively atmosphere.</td>
+                  <td>Rio de Janeiro is a vibrant and iconic city located on the southeastern coast of Brazil. Known for its stunning natural beauty, lively culture, and world-famous landmarks, Rio de Janeiro is often referred to as the "Cidade Maravilhosa" (Marvelous City).</td>
+                  <td>New York, often referred to as the "Big Apple" or the "City that Never Sleeps," is one of the most iconic and diverse cities in the world. Located in the northeastern United States, it is the largest city in the country and a global hub for finance, culture, fashion, and entertainment.</td>
+                  <td>Sydney is the capital city of New South Wales and the largest city in Australia. Situated on the southeastern coast, it is known for its stunning natural landscapes, iconic landmarks, and vibrant cultural scene.</td>
+                </tr>
+                <tr class="active-row">
+                  <td>Price:</td>
+                  <td>€599</td>
+                  <td>€799</td>
+                  <td>€499</td>
+                  <td>€799</td>
+                  <td>€699</td>
+                </tr>
+                <tr>
+                  <td>Availability:</td>
+                  <td>From 18/06/23</td>
+                  <td>From 20/06/23</td>
+                  <td>From 17/07/23</td>
+                  <td>From 22/08/23</td>
+                  <td>From 13/08/23</td>
+                </tr>
+              </tbody>
+        </table>
+
+    </section>
+
+    <!--Destinations Second Section-->
+    <section class="destinations-second-section">
+        <div class="destinations-second-title">
+            <h2>Summer Offer! <br> Most Popular Packages:</h2>
+        </div>
+
+        <!--packages offers -->
+        <!-- Base Layout: https://www.sliderrevolution.com/resources/css-tables/-->
+        <div class="pricing-box-container">
+            <div class="pricing-box text-center">
+              <h5>London + Guided City Tour</h5>
+              <p class="price"><sup>€</sup>999<sub></p>
+              <ul class="features-list">
+                <li><strong>4</strong> Days</li>
+                <li><strong>15</strong> Group Size</li>
+                <li><strong>3</strong> Free Meals/Day</li>
+                <li><strong>1</strong> Harry Potter Tour</li>
+              </ul>
+              <button class="btn-primary">Get Started</button>
+            </div>
+          
+            <div class="pricing-box pricing-box-bg-image text-center">
+              <h5>Rio de Janeiro + Christ the Redeemer Guided Tour</h5>
+              <p class="price"><sup>€</sup>1199<sub></p>
+              <ul class="features-list">
+                <li><strong>7</strong> Days</li>
+                <li><strong>20</strong> Group Size</li>
+                <li><strong>3</strong> Free Meals/Day</li>
+                <li><strong>1</strong> Sugarloaf Mountain Tour</li>
+              </ul>
+              <button class="btn-primary">Get Started</button>
+            </div>
+          
+            <div class="pricing-box text-center">
+              <h5>Dublin + DBS Guided Tour</h5>
+              <p class="price"><sup>€</sup>799<sub></p>
+              <ul class="features-list">
+                <li><strong>3</strong> Days</li>
+                <li><strong>15</strong> Group size</li>
+                <li><strong>3</strong> Free Meals/Day</li>
+                <li><strong>1</strong> Guiness Storehouse Experiece</li>
+              </ul>
+              <button class="btn-primary">Get Started</button>
+            </div>
+          </div>
     </section>
 
     <!--footer-->
