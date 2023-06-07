@@ -147,3 +147,9 @@
     color: var(--text-color);
 }
 /*end of second form*/
+
+@media (max-width: 575px){
+    .book-heading span{
+        font-size: 1rem;
+    }
+}
