@@ -9,6 +9,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="destinations-styles.css">
+    <link rel="stylesheet" href="booking-styles.css">
+
     
     <!-- box icons -->
     <link rel="stylesheet"
@@ -45,12 +47,12 @@
         <div class="home-text">
             <h1>Helping you travel beyond boundaries <br> and borders</h1>
             <p>We make travel easy and effortless</p>
-            <p><a href="#" class="home-btn">Choose Your Destination!</a></p>
+            <p><a href="#destinations" class="home-btn">Choose Your Destination!</a></p>
         </div>
     </section>
 
     <!-- HOME SECOND SECTION-->
-    <section class="home-second-section">
+    <section class="home-second-section" id="home-second-section">
         <div class="parent">
             <div class="child">
                 <h1>About us</h1>
@@ -107,7 +109,7 @@
     <!-- Destinations Section -->
     <section class="destinations" id="destinations">
         <div class="destinations-title">
-            <h2>Available Destinations Worldwide on Discount</h2>
+            <h2>Popular Available Destinations Worldwide</h2>
         </div>
 
         <table class="table-container">
@@ -140,11 +142,11 @@
                 </tr>
                 <tr>
                   <td>Availability:</td>
-                  <td>From 18/06/23</td>
-                  <td>From 20/06/23</td>
-                  <td>From 17/07/23</td>
-                  <td>From 22/08/23</td>
-                  <td>From 13/08/23</td>
+                  <td>From 11/6/2023</td>
+                  <td>From 11/6/2023</td>
+                  <td>From 11/6/2023</td>
+                  <td>From 11/6/2023</td>
+                  <td>From 11/6/2023</td>
                 </tr>
               </tbody>
         </table>
@@ -152,7 +154,7 @@
     </section>
 
     <!--Destinations Second Section-->
-    <section class="destinations-second-section">
+    <section class="destinations-second-section" id="destinations-second-section">
         <div class="destinations-second-title">
             <h2>Summer Offer! <br> Most Popular Packages:</h2>
         </div>
@@ -169,7 +171,7 @@
                 <li><strong>3</strong> Free Meals/Day</li>
                 <li><strong>1</strong> Harry Potter Tour</li>
               </ul>
-              <button class="btn-primary">Get Started</button>
+              <button class="btn-primary">Book Now</button>
             </div>
           
             <div class="pricing-box pricing-box-bg-image text-center">
@@ -181,7 +183,7 @@
                 <li><strong>3</strong> Free Meals/Day</li>
                 <li><strong>1</strong> Sugarloaf Mountain Tour</li>
               </ul>
-              <button class="btn-primary">Get Started</button>
+              <button class="btn-primary">Book Now</button>
             </div>
           
             <div class="pricing-box text-center">
@@ -193,15 +195,135 @@
                 <li><strong>3</strong> Free Meals/Day</li>
                 <li><strong>1</strong> Guiness Storehouse Experiece</li>
               </ul>
-              <button class="btn-primary">Get Started</button>
+              <button class="btn-primary">Book Now</button>
             </div>
-          </div>
+        </div>
+    </section>
+
+    <!--Booking Section-->
+    <section class="bookings" id="bookings">
+        <h1 class="book-heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="first-form">
+            <form action="">
+                <div class="input-box">
+                    <h3>Name</h3>
+                    <input type="name" placeholder="your name">
+                </div>
+                <div class="input-box">
+                    <h3>Email</h3>
+                    <input type="email" placeholder="your email">
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="forms-image">
+                <img src="img/watercolor-travelling-blue-car-with-suitcases_354917-21.png" alt="">
+            </div>
+
+            <form action="">
+
+                <div class="input-box">
+                    <h3>Destination</h3>
+                    <div class="dropdown">
+                        <select>
+                            <option value="london">London</option>
+                            <option value="Dublin">Dublin</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="New York">New York</option>
+                            <option value="Sidney">Sidney</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <h3>Passagers</h3>
+                    <input type="number" placeholder="number of passagers">
+                </div>
+                <div class="input-box">
+                    <h3>Depart</h3>
+                    <input type="date">
+                </div>
+                <div class="input-box">
+                    <h3>Return</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn-primary" value="Submit">
+            </form>
+
+        </div>
+
     </section>
 
     <!--footer-->
+    <!--
     <footer class="footer">
         &copy; 2023. CA1 Travel Agency. All rights reserved.
     </footer>
+    -->
+    <section class="contact" id="contact">
+        <div class="footer">
+            <div class="main">
+                <div class="list">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home-second-section">About us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#destinations-second-section">Tours</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Tours</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="#">123 Dublin St</a></li>
+                        <li><a href="#">D12 ABCD</a></li>
+                        <li><a href="#">+353 12 345 6789</a></li>
+                        <li><a href="#">test@test.ie</a></li>
+                        <li><a href="#">+353 12 345 6789</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Social Midia</h4>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="final-text">
+            <p>&copy; 2023. CA1 Travel Agency. All rights reserved.</p>
+        </div>
+    </section>
 
     <!-- link to js -->
     <script type="text/javascript" src="script.js"></script>
