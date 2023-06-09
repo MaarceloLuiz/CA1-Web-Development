@@ -19,3 +19,18 @@ window.onscroll = () =>{
     menu.classList.remove('bx-x');
     navbar.classList.remove('open');
 };
+
+/* scroll reveal style */
+window.sr = ScrollReveal({reset: true});
+
+sr.reveal('.opacity-box', {duration: 1000} );
+
+sr.reveal('.row-of-services', {
+    rotate: {x: 0, y: 50, z: 0},
+    duration: 1000
+});
+
+sr.reveal('.pricing-box-container', {
+    rotate: {x: 0, y: 50, z: 0},
+    duration: 1000
+});

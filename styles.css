@@ -107,13 +107,25 @@ section{
     align-items: center;
 }
 
+/* opacity style */
+.opacity-box{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background: rgba(98, 58, 133, 0.5);*/
+    background: rgba(137, 102, 168, .5);
+    box-shadow: 5px 30px 56.1276px rgb(204, 161, 214);
 
+    visibility: hidden;
+}
+
+/* home title style */
 .home-text h1{
     font-family: 'Paytone One', sans-serif;
     font-size: 20;
     line-height: 1.2;
     color: var(--bg-color);
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-bottom: 20px;
 
     text-align: center;
@@ -211,6 +223,8 @@ header.sticky{
     align-items: center;
     text-align: center;
     margin-top: 2rem;
+
+    visibility: hidden;
 }
 
 /*changing the display style depending on the screen size*/
@@ -255,7 +269,6 @@ header.sticky{
 }
 
 /* footer style */
-
 #contact{
     background: var(--second-text-color);
 }
